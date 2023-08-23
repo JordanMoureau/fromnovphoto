@@ -63,15 +63,63 @@
                 <div class="row d-flex justify-content-center align-items-center m-4 p-5">
 
                     <div class="col-6 pr-5">
-                    <h3>Capturing magic moments since 2010
+                    <h3>A photography serice located in Eastern Washington and Northern Idaho
                         <br><br>
-                        A photography serice located in Eastern Washington and Northern Idaho</h3>
+                        
+                        Capturing magic moments since 2010</h3>
                     </div>
 
                     <div class="col-6">
                         <img src="images/steamy.png" alt="sexy kiss shot" class="w-100  p-4 mb-5 bg-white">
                     </div>
                 </div>
+
+                <div class="row bg-white py-5 pl-5 d-flex align-items-center" style="color:#C0D89E">
+                    <div class="col-5 p-4">
+                        <img src="images/famlies.png" alt="loving mom and baby photo" class="w-100">
+                    </div>
+
+                    <div class="col-4 mx-5 pr-5">
+                        <h2>Families</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                            sed diam nonummy nibh euismod tincidunt u laoreet dolore magna. </p>
+                    </div>
+                    
+                    <div class="col-1 slideshow-nav ml-5">
+                        <div class="row next px-3">
+                            <div class="col-12">
+                                <img src="images/next.png" alt=" next arrow" class="pb-2" width="30px">
+                                <div class="row">NEXT</div>
+                            </div>
+                        </div>
+
+                        <div class="row prev px-3">
+                            <div class="col-12">
+                                <div class="row">PREV</div>
+                                <img src="images/prev.png" alt=" previous arrow" class="pt-2" width="30px">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="row meetme m-0 pt-4 pb-4 d-flex flex-row-reverse align-items-center">
+
+
+                    <div class="col-lg-4 col-md-5 col-10 m-5" style="color:#C0D89E">
+                        <div class="p-5 bg-white ">
+                        <h2>Meet the Artist</h2>
+                        <p class="mb-2">I got into photography when I was about 14 years old. My best friend’s older sister was a photographer. I took her fall photography class every year. We’d sit around her computer at the local coffee shop of our small town in Northern Georgia and talk about photography every thursday.</p>
+                        <a href="aboutus.html" style="text-decoration: underline;">Read More</a>
+                        </div>
+                    </div>
+
+
+               
+
+                </div>
+
+        
          
             </section>
 
@@ -98,26 +146,31 @@
 
                          
 
-                            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                      
+                         <form id="contact-form" name="contact-form" action= "https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="9ae24ab6-5ab5-4498-bec3-c3a9c006e4d7">
 
-                                <div class="row mb-3">
-            
-                                     <input class="form-control md-text-area"  type="text" id="name" name="name" placeholder="first and last name">
-                                
-                                </div>
+                            <div class="row mb-3">
+        
+                                 <input class="form-control md-text-area"  type="text" id="name" name="name" placeholder="first and last name">
+                            
+                            </div>
 
-                                <div class="row mb-3">
-                                     <input class="form-control md-text-area"  type="text" id="email" name="email" placeholder="email and/or phone number">
-                                </div>
+                            <div class="row mb-3">
+                                 <input class="form-control md-text-area"  type="text" id="email" name="email" placeholder="email and/or phone number">
+                            </div>
 
-                                <div class="row mb-3">
-                                     <textarea rows="5" style="height:100%;" class="form-control md-text-area"  type="text" id="message" name="message" placeholder="Tell us about your project. How can we make it magical and beautiful for you?"></textarea>
-                                </div>
-                            </form>
+                            <div class="row mb-3">
+                                 <textarea rows="5" style="height:100%;" class="form-control md-text-area"  type="text" id="message" name="message" placeholder="Tell us about your project. How can we make it magical and beautiful for you?"></textarea>
+                            </div>
 
                             <div class="row">
-                                <a class="btn" style="background-color: #A3B57F;">Send</a>
+                                <input id="submit" type="submit" value="send" class="btn" style="background-color: white; color:#C0D89E">  
                             </div>
+                        </form>
+
+                        <div id="message"></div>
+                        <div id="result" class="result"></div>
                         
                         </div>
                     </div>

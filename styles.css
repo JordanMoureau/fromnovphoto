@@ -248,3 +248,56 @@ footer{
     border-color: #C0D89E !important;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 255, 255, 0.6) !important;
   }
+
+  .meetme{
+    background-image: url(images/meetme.png);
+    background-position: left;
+    background-size: cover;
+    height: 78vh;
+    border-bottom: solid 5px !important;
+  }
+
+  .slideshow-nav{
+    position: relative;
+    height: 40vh;
+  }
+
+  .next{
+    position:absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .prev{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .next:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .prev:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+
+
+
+
+  /* .result{
+    color:#fff;
+    float:left;
+    font-family: "Metropolis bold";
+    text-align: left;
+  }
+  
+  #message{
+    padding-top: 1px;
+    display:inline-block;
+    text-align:center;
+    width:300px;
+  } */

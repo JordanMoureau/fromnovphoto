@@ -57,7 +57,8 @@
 
                      
 
-                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                        <form id="contact-form" name="contact-form" action= "https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="9ae24ab6-5ab5-4498-bec3-c3a9c006e4d7">
 
                             <div class="row mb-3">
         
@@ -72,11 +73,13 @@
                             <div class="row mb-3">
                                  <textarea rows="5" style="height:100%;" class="form-control md-text-area"  type="text" id="message" name="message" placeholder="Tell us about your project. How can we make it magical and beautiful for you?"></textarea>
                             </div>
+
+                            <div class="row">
+                                <input id="submit" type="submit" value="send" class="btn" style="background-color: #C0D89E; color:white">  
+                            </div>
                         </form>
 
-                        <div class="row">
-                            <a class="btn" style="background-color: #C0D89E;">Send</a>
-                        </div>
+              
                     
                     </div>
                 </div>
