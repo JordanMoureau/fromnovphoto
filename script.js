@@ -21,8 +21,7 @@ form.addEventListener("submit", function (e) {
     .then(async (response) => {
       let json = await response.json();
       if (response.status == 200) {
-        result.innerHTML = "<h3>Message Sent!</h3><p>I'll be in touch.</p>";
-        result.style.backgroundColor = "#F2AEC9";
+        result.innerHTML = "<h3>Message Sent!</h3><p>We'll be in touch.</p>";
         form.style.display = "none";
         message.style.display = "none";
       } else {
@@ -40,8 +39,9 @@ form.addEventListener("submit", function (e) {
       form.reset();
       setTimeout(() => {
         result.style.display = "none";
+        message.style.display = "none";
         form.style.display = "block";
         document.getElementById("submit").style.display = "block";
-      }, 6000);
+      }, 8000);
     });
 });
